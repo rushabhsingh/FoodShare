@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ksapps.shelfshare.AdActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Ad Name"
+            android:id="@+id/tvAdName"/>
+
+        <RelativeLayout
+            android:id="@+id/lvImage"
+            android:layout_below="@+id/tvAdName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivAdImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/image" />
+
+            <ImageButton
+                android:id="@+id/userAdPhoto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/ivAdImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-60dp"
+                android:background="@drawable/profile_circular_border_imageview"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_pic" />
+
+            <TextView
+                android:id="@+id/tvUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userAdPhoto"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <RatingBar
+            android:id="@+id/rbRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lvImage"
+            android:layout_centerHorizontal="true"
+            android:isIndicator="true"
+            android:rating="3" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbRating"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:text="Description:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp" />
+
+        <LinearLayout
+            android:id="@+id/lvSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDays">
+
+            <Button
+                android:id="@+id/btnLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_weight="1"
+                android:text="Location" />
+
+            <TextView
+                android:id="@+id/tvFreeDonate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:text="Hello"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lvSection"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Request" />
+
+    </RelativeLayout>
+</ScrollView>

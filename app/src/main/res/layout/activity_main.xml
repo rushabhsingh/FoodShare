@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ksapps.shelfshare.MainActivity">
+
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:text="View Profile" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnProfile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:text="Search Ads" />
+
+    <Button
+        android:id="@+id/btnAddBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnProfile"
+        android:layout_below="@+id/btnProfile"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:text="Post Ads" />
+
+    <Button
+        android:id="@+id/btnChatRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnAddBook"
+        android:layout_alignBottom="@+id/btnAddBook"
+        android:layout_alignEnd="@+id/btnSearch"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:text="Chat Room" />
+
+    <LinearLayout
+        android:id="@+id/button_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+    </LinearLayout>
+</RelativeLayout>
